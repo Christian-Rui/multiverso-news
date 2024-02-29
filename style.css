@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292929;
+    color: #f4f4f4;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.dark {
+    background-color: #f4f4f4;
+    color: #292929;
+}
+
+.cabecalho {
+    padding: 1% 10%;
+    background-color: #242424;
+    /* position: fixed;
+    right: 0;
+    left: 0; */
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__div__links{
+    display: flex;
+    gap: 48px;
+    
+    width: 50%;
+    justify-content: space-around;
+    
+}
+.cabecalho__links {
+    font-size: 24px;
+    color: #f4f4f4;
+}
+
+.buttomTema {
+    background-color: transparent;
+    border-radius: 0;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    padding: 1% 10%;
+}
+
+.container__titulo {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.container__subtitulo {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.container__artigos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.container__noticia {
+    display: flex;
+    width: 65%;
+    gap: 22px;
+
+}
+
+.container__noticia__div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 3% 0;
+}
+
+.container__noticia__titulo {
+    font-size: 1.75rem;
+    color: #f4f4f4;
+}
+
+.container__noticia__info {
+    font-size: 1rem;
+    color: #BDBDBD;
+}
+
+
+.noticia__imagem {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 1% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #242424;
+}
+
+.rodape__footer {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.rodape__footer__titulo {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+}
+
+.rodape__c {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #BDBDBD;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding: 1% 5%;
+    }
+    .container__artigos {
+        align-items: center;
+    }
+    .container__noticia {
+        flex-direction: column-reverse;
+    }
+    footer {
+        align-items: center;
+    }
+    .rodape__c {
+        text-align: center;
+    }
+}
